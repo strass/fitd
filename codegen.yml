@@ -1,0 +1,24 @@
+overwrite: true
+schema:
+  - https://ncmtninmmbhvfk36ayqgal6hke.appsync-api.us-east-1.amazonaws.com/graphql:
+      headers:
+        x-api-key: ${API_KEY}
+documents: "src/**/*.graphql"
+generates:
+  src/generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+      # - "typescript-graphql-files-modules"
+      # - "typescript-document-nodes"
+      - "fragment-matcher"
+    config:
+      withHooks: true
+      withHOC: false
+      withComponent: false
+      # withMutationFn: false
+
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"
