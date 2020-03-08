@@ -2,7 +2,7 @@ overwrite: true
 schema:
   - https://ncmtninmmbhvfk36ayqgal6hke.appsync-api.us-east-1.amazonaws.com/graphql:
       headers:
-        x-api-key: ${API_KEY}
+        x-api-key: ${REACT_APP_API_KEY}
 documents: "src/**/*.graphql"
 generates:
   src/generated/graphql.tsx:

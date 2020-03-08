@@ -1,0 +1,26 @@
+mutation createRolls($createrollsinput: CreateRollsInput!) {
+  createRolls(input: $createrollsinput) {
+    id
+    dice
+    createdAt
+  }
+}
+
+subscription onCreateRolls {
+  onUpdateRolls {
+    id
+    dice
+    createdAt
+  }
+}
+
+query listRolls {
+  listRolls {
+    items {
+      id
+      dice
+      createdAt
+    }
+  }
+}
+
