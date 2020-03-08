@@ -10,7 +10,7 @@ type D6 = 0 | 1 | 2 | 3 | 4 | 5 | 6;
 const App: FunctionComponent = () => {
   // const subscription = useOnCreateRollsSubscription();
   // console.log(subscription);
-  const { data } = useListRollsQuery({ pollInterval: 5 });
+  const { data } = useListRollsQuery({ pollInterval: 5000 });
   const [createRoll, { loading: mutationPending }] = useCreateRollsMutation();
   const [dice, setDice] = useState<D6>(0);
   const roll: React.DOMAttributes<HTMLFormElement>["onSubmit"] = async e => {
