@@ -21,7 +21,7 @@
     "aws-appsync-auth-link": "^2.0.1",
     "aws-appsync-subscription-link": "^2.0.1",
     "graphql-tag": "^2.10.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
